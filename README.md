@@ -1,5 +1,13 @@
 # tech-strikers-bn-frontend
 
+---
+
+[![CircleCI](https://circleci.com/gh/atlp-rwanda/tech-strikers-bn-frontend.svg?style=svg&circle-token=A0f3ea0d5802310fce463f89b312d1f2864bd839)](https://app.circleci.com/pipelines/github/atlp-rwanda/tech-strikers-bn-frontend)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7421999c06a95ffcd6cd/maintainability)](https://codeclimate.com/github/BiGelio/tech-strikers-bn-frontend/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7421999c06a95ffcd6cd/test_coverage)](https://codeclimate.com/github/BiGelio/tech-strikers-bn-frontend/test_coverage)
+
+---
+
 **Barefoot Nomad - Making company travel and accommodation easy and convenient.**
 
 **Vision**

@@ -1,41 +1,35 @@
+name: circleci
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
 jobs:
-  run_tests:
+  build:
     docker:
       - image: circleci/node:10
-    environment:
-      - CC_TEST_REPORTER_ID: fb5ccb625dd4e1087494619d25b46183cc50948743c6d2a8bd506bd3ad48a2a9
-
     steps:
       - checkout
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: Install npm dependencies
-          command: npm install --save
-      - run:
-          name: run tests
-          command: npm run test
-          when: always
-      - run:
-          name: run coverage
-          command: npm run coverage
-          when: always
+          name: Setup Dependencies
+          command: npm install
       - run:
           name: Setup Code Climate test-reporter
           command: |
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
-            ./cc-test-reporter before-build
-          when: always
-      - run:
-          name: Send coverage report to Code Climate
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run: # run tests
+          name: Run Test and Coverage
           command: |
-            ./cc-test-reporter after-build -t lcov
-          when: always
-      - store_artifacts:
-          path: ./coverage/lcov.info
-          prefix: tests
+            ./cc-test-reporter before-build
+            npm test -- --coverage
+            ./cc-test-reporter after-build --exit-code $?
+
+      - coveralls/upload
 workflows:
   node-tests:
     jobs:

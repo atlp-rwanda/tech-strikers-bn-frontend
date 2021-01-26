@@ -4,4 +4,5 @@ class Login extends React.Component {
     return <h1>login component</h1>;
   }
 }
+
 export default Login;
