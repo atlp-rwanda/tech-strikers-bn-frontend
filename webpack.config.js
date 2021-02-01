@@ -14,6 +14,10 @@ module.exports = {
         exclude: /node_modules/,
         use: "babel-loader",
       },
+      {
+        test: /\.(css|scss)$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
