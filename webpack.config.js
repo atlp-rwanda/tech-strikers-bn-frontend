@@ -18,7 +18,11 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(gif|jpg|jpg|svg)$/,
+        loader: "file-loader",
+      },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
 };
