@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "/dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -13,6 +14,7 @@ module.exports = {
     port: 7000,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -25,7 +27,16 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(gif|jpg|jpg|svg)$/,
+        loader: "file-loader",
+      },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+      filename: "./index.html",
+    }),
+  ],
 };
