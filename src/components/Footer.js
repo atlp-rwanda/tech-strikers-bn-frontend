@@ -16,9 +16,9 @@ class Footer extends Component {
               <p>Email: strikers668@gmail.com </p>
             </main>
           </div>
-          <section className="text-center">
-            &copy; {new Date().getUTCFullYear()} Barefoot Nomad By TeckStrickers
-          </section>
+        </section>
+        <section className="text-center">
+          &copy; {new Date().getUTCFullYear()} Barefoot Nomad By TeckStrickers
         </section>
       </footer>
     );

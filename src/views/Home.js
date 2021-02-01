@@ -14,12 +14,11 @@ class Home extends Component {
         <section>
           <img
             src={fontImage}
-            className="col-12"
+           className="col-12"
             style={{ maxHeight: "380px" }}
             alt
           />
         </section>
-
         <div
           style={{ backgroundColor: "#061437" }}
           className="d-flex flex-row bd-highlight justify-content-center mb-3"
@@ -62,12 +61,46 @@ class Home extends Component {
                 <Card>
                   <img src={fontImage} className="card-img-top " alt="hero" />
                   <CardContent title="Paris" body="calculated" />
+
+        <div style={{ backgroundColor: "#061437" }} className="container">
+          <div className="row align-items-center" style={{ marginTop: "10" }}>
+            <div className="col">
+              <p>Where do you want to go</p>
+            </div>
+            <div className="col">
+              <button type="button" className="btn btn-light">
+                Primary
+              </button>
+            </div>
+            <div className="col-2">
+              <button type="button" className="btn btn-light">
+                Primary
+              </button>
+            </div>
+            <div className="col-2">
+              <button type="button" className="btn btn-light">
+                Primary
+              </button>
+            </div>
+            <div className="col-2">
+              <button type="button" className="btn btn-light">
+                Primary
+              </button>
+            </div>
+          </div>
+        </div>
                 </Card>
               </div>
               <div className="col-4">
                 <Card>
                   <img src={fontImage} className="card-img-top " alt="hero" />
-                  <CardContent title="Paris" body="calculated" />
+                  <div className="card-body">
+                    <h5 className="card-title">Paris</h5>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
                 </Card>
               </div>
               <div className="col-4">
@@ -79,7 +112,6 @@ class Home extends Component {
             </div>
           </div>
         </section>
-
         <Footer />
       </div>
     );

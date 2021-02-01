@@ -55,8 +55,7 @@ class Navbar extends Component {
             Login
           </div>
         </div>
-      </>
-    );
+      </>    );
   }
 }
 
