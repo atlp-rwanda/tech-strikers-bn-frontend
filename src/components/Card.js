@@ -4,8 +4,8 @@ class Card extends Component {
   render() {
     return (
       <div
-        className="card"
-        style={{ width: "18rem", margin: "20px 20px 20px 10px" }}
+        className="card shadow-lg mb-5 bg-blue rounded"
+        style={{ width: "18rem" }}
       >
         {this.props.children}
       </div>

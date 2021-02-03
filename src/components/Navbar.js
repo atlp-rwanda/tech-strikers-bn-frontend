@@ -22,68 +22,40 @@ class Navbar extends Component {
   render() {
     const { show } = this.state;
     return (
-      <nav
-        style={{ backgroundColor: "#061437", color: "#000000" }}
-        className="navbar navbar-expand-lg navbar bg-light"
-      >
-        <div style={{ color: "#000000" }} className="container-fluid">
-          <a className="navbar-brand" href="/">
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div className="navbar-nav ">
-              <a className="nav-link active" aria-current="page" href="#h">
-                Home
-              </a>
-              <a className="nav-link" onClick={this.handleShow}>
-                Signup
-              </a>
-              <Modal show={show} onHide={this.handleClose}>
-                <Modal.Header>
-                  <span className="" onClick={this.handleClose}>
-                    X
-                  </span>
-                  <Modal.Title>Modal Heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  Woohoo, you're reading this text in a modal!
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button
-                    href="/dashboard"
-                    variant="primary"
-                    onClick={this.handleClose}
-                  >
-                    Register
-                  </Button>
-                </Modal.Footer>
-              </Modal>
-              <a className="nav-link" href="#h">
-                Pricing
-              </a>
-              <a
-                className="nav-link disabled"
-                href="#h"
-                tabIndex="-1"
-                aria-disabled="true"
+      <>
+        <div
+          className="d-flex bd-highlight p-2 text-white"
+          style={{ background: "#061437" }}
+        >
+          <div className="mr-auto flex-grow-1 p-2 bd-highlight">
+            Barefoot Nomad
+          </div>
+          <div onClick={this.handleShow} className="p-2 bd-highlight">
+            Signup
+          </div>
+          <Modal show={show} onHide={this.handleClose}>
+            <Modal.Header closeButton>
+              <span onClick={this.handleClose}>X</span>
+              <Modal.Title>Modal Heading</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              Woohoo, you're reading this text in a modal!
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+                href="/dashboard"
+                variant="primary"
+                onClick={this.handleClose}
               >
-                Disabled
-              </a>
-            </div>
+                Register
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          <div className="ml-auto p-2 bd-highlight" onClick={this.handleShow}>
+            Login
           </div>
         </div>
-      </nav>
+      </>
     );
   }
 }

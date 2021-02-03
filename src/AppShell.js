@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar";
+import DashboardNavbar from "./components/DashboardNavbar";
 import Sidebar from "./components/Sidebar";
 
 class AppShell extends Component {
@@ -9,7 +9,7 @@ class AppShell extends Component {
       <div>
         <section className="row">
           <main className="col-12">
-            <Navbar />
+            <DashboardNavbar />
           </main>
         </section>
         <section className="row">

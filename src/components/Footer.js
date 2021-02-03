@@ -6,21 +6,19 @@ class Footer extends Component {
       <footer style={{ background: "#061437", color: "white" }}>
         <section className="container">
           <div className="row">
-            <main className="col-4">
+            <main className="col-6">
               <h3>Barefoot Nomad</h3>
               <p>Simplifiying travellers</p>
             </main>
-            <main className="col-4">
-              <h3>Barefoot Nomad</h3>
-              <p>Simplifiying travellers</p>
-            </main>
-            <main className="col-4">
-              <p>Simplifiying travellers</p>
-              <p>Simplifiying travellers</p>
-              <p>Simplifiying travellers</p>
+
+            <main className="col-6">
+              <h5>Contact us</h5>
+              <p>Email: strikers668@gmail.com </p>
             </main>
           </div>
-          <section>{new Date().getUTCFullYear()} &copy; TeckStrickers </section>
+          <section className="text-center">
+            &copy; {new Date().getUTCFullYear()} Barefoot Nomad By TeckStrickers
+          </section>
         </section>
       </footer>
     );
