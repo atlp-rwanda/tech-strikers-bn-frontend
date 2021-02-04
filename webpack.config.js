@@ -4,8 +4,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "/dist"),
+    path: path.resolve(__dirname, "/build"),
     filename: "bundle.js",
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "build"),
+    compress: true,
+    port: 7000,
+    hot: true,
+    liveReload: true,
   },
   module: {
     rules: [
@@ -17,6 +24,23 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: ["url-loader?limit=200000"],
+      },
+      {
+        test: /\.(gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              query: {
+                name: "assets/[name].[ext]",
+              },
+            },
+          },
+        ],
       },
     ],
   },
