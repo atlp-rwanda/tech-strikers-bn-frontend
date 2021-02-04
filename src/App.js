@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "../src/assets/App.scss";
 
 const App = () => (
   <div>Hello! This Barefoot Nomad created from Scratch. WOW</div>
