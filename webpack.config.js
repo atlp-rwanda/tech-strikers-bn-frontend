@@ -1,11 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -13,7 +15,9 @@ module.exports = {
     port: 7000,
     hot: true,
     liveReload: true,
-    historyApiFallback: true,
+    historyApiFallback: {
+      disableDotRule: true,
+    },
   },
   module: {
     rules: [
@@ -46,5 +50,8 @@ module.exports = {
     ],
   },
 
-  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./public/index.html" }),
+    new Dotenv(),
+  ],
 };
