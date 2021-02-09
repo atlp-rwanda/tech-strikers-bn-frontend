@@ -1,26 +1,26 @@
 import React from "react";
-import "../src/assets/App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./views/Home";
+import AppShell from "./AppShell";
+import Dashboard from "./views/Dashboard";
+import "./assets/App.scss";
 
 const App = () => (
   <Router>
-    <div>
-      <nav>
-        <ul>
-          <h1>welcome to Baretfoot Nomad</h1>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      </nav>
-      <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/login">
+        <Login />
+      </Route>
+      <Route path="/dashboard">
+        <AppShell>
+          <Dashboard />
+        </AppShell>
+      </Route>
+    </Switch>
   </Router>
 );
-
 export default App;
