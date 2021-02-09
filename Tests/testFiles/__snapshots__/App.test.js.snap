@@ -2,20 +2,366 @@
 
 exports[`snapshot test 1`] = `
 <div>
-  <nav>
-    <ul>
-      <h1>
-        welcome to Baretfoot Nomad
-      </h1>
-      <li>
-        <a
-          href="/login"
-          onClick={[Function]}
+  <div
+    className="d-flex bd-highlight p-2 text-white"
+    style={
+      Object {
+        "background": "#061437",
+      }
+    }
+  >
+    <div
+      className="mr-auto flex-grow-1 p-2 bd-highlight"
+    >
+      Barefoot Nomad
+    </div>
+    <button
+      className="p-2 bd-highlight signup-btn"
+    >
+      Signup
+    </button>
+    <button
+      className="ml-auto p-2 bd-highlight login-btn"
+      onClick={[Function]}
+    >
+      Login
+    </button>
+  </div>
+  <section>
+    <img
+      className="col-12"
+      src="test-file-stub"
+      style={
+        Object {
+          "maxHeight": "400px",
+        }
+      }
+    />
+  </section>
+  <div
+    className="d-flex flex-row bd-highlight justify-content-center mb-3"
+    style={
+      Object {
+        "backgroundColor": "#061437",
+      }
+    }
+  >
+    <div
+      className="text-white  mx-auto bd-highlight"
+    >
+      <p
+        className="p-3"
+      >
+        Where do you want to go?
+      </p>
+    </div>
+    <div
+      className="p-2  mx-auto bd-highlight"
+    >
+      <button
+        className="text-white btn btn-outline-dark"
+        disabled={false}
+        type="button"
+      >
+        Destination
+      </button>
+       
+    </div>
+    <div
+      className="p-2  mx-auto bd-highlight"
+    >
+      <button
+        className="w-100 d-inline-block text-white btn btn-outline-dark"
+        disabled={false}
+        type="button"
+      >
+        Date
+      </button>
+       
+    </div>
+    <div
+      className="p-2  mx-auto bd-highlight"
+    >
+      <button
+        className="text-white btn btn-outline-dark"
+        disabled={false}
+        type="button"
+      >
+        Travel Type
+      </button>
+       
+    </div>
+    <div
+      className="p-2  mx-auto bd-highlight"
+    >
+      <button
+        className="text-white btn btn-danger"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+       
+    </div>
+  </div>
+  <section
+    style={
+      Object {
+        "paddingBottom": "20px",
+        "paddingTop": "20px",
+      }
+    }
+  >
+    <div
+      className="container"
+    >
+      <h2
+        className="text-center"
+      >
+        Most Visited Places
+      </h2>
+      <div
+        className="row"
+      >
+        <div
+          className="col-4"
         >
-          Login
-        </a>
-      </li>
-    </ul>
-  </nav>
+          <div
+            className="card shadow-lg mb-5 bg-blue rounded cardBox"
+          >
+            <img
+              alt="hero"
+              className="card-img-top "
+              src="test-file-stub"
+            />
+            <div
+              className="cardContent"
+            >
+              Dar-es-Salam,
+              <div>
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingTop": "15px",
+                  }
+                }
+              >
+                <img
+                  className="starIcon locationIcon"
+                  src="test-file-stub"
+                />
+                Tanzania
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-4"
+        >
+          <div
+            className="card shadow-lg mb-5 bg-blue rounded cardBox"
+          >
+            <img
+              alt="hero"
+              className="card-img-top "
+              src="test-file-stub"
+            />
+            <div
+              className="cardContent"
+            >
+              Kigali,
+              <div>
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingTop": "15px",
+                  }
+                }
+              >
+                <img
+                  className="starIcon locationIcon"
+                  src="test-file-stub"
+                />
+                Rwanda
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-4"
+        >
+          <div
+            className="card shadow-lg mb-5 bg-blue rounded cardBox"
+          >
+            <img
+              alt="hero"
+              className="card-img-top "
+              src="test-file-stub"
+            />
+            <div
+              className="cardContent"
+            >
+              Nairobi,
+              <div>
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+                <img
+                  className="starIcon"
+                  src="test-file-stub"
+                />
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingTop": "15px",
+                  }
+                }
+              >
+                <img
+                  className="starIcon locationIcon"
+                  src="test-file-stub"
+                />
+                Kenya
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    style={
+      Object {
+        "background": "#061437",
+        "color": "white",
+        "paddingBottom": "25px",
+        "paddingLeft": "20px",
+        "paddingTop": "50px",
+      }
+    }
+  >
+    <section
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <main
+          className="col-4"
+        >
+          <h3>
+            Barefoot Nomad
+          </h3>
+          <p
+            style={
+              Object {
+                "color": "rgba(255,255,255,0.81)",
+              }
+            }
+          >
+            Simplifying employee travels
+          </p>
+          <div>
+            <p
+              style={
+                Object {
+                  "color": "#5E6D77",
+                  "marginBottom": "0px",
+                }
+              }
+            >
+              KN 54 St,
+               
+            </p>
+            <p
+              style={
+                Object {
+                  "color": "#5E6D77",
+                }
+              }
+            >
+              Kigali, Rwanda
+            </p>
+          </div>
+        </main>
+        <main
+          className="col-3 contactMain"
+        >
+          <p>
+            Tel: + 250 788 54 4534
+          </p>
+          <p>
+            Email: strikers688@gmail.com
+          </p>
+        </main>
+      </div>
+      <section
+        className="text-center"
+        style={
+          Object {
+            "color": "#BCBCBC",
+          }
+        }
+      >
+        © 
+        2021
+         Barefoot Nomad By
+         
+        <span
+          style={
+            Object {
+              "color": "#0085FF",
+            }
+          }
+        >
+          TeckStrickers
+        </span>
+      </section>
+    </section>
+  </footer>
 </div>
 `;
