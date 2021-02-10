@@ -21,6 +21,7 @@ const App = () => (
         </AppShell>
       </Route>
     </Switch>
+
   </Router>
 );
 export default App;

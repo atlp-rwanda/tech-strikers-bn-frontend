@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import GoogleFacebookLogin from "./GoogleFacebookLogin";
 import authIcon from "../assets/image/userAuthIcon.png";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
@@ -82,6 +83,7 @@ class Login extends React.Component {
             </Button>
           </Form>
         </Modal.Body>
+        <GoogleFacebookLogin />
       </Modal>
     );
   }
