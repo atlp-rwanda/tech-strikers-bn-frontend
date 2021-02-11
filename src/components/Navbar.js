@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button } from "react-bootstrap";
+import GoogleFacebookLogin from "./GoogleFacebookLogin";
 import Form from "react-bootstrap/Form";
 import authIcon from "../assets/image/userAuthIcon.png";
 
@@ -83,6 +84,7 @@ class Navbar extends Component {
                 </Button>
               </Form>
             </Modal.Body>
+            <GoogleFacebookLogin />
           </Modal>
         </div>
       </>
