@@ -10,9 +10,10 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 3000,
+    port: 7000,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -44,5 +45,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+
+  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
 };

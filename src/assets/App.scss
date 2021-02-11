@@ -1,4 +1,85 @@
-div {
-  color: red;
-  font-size: 20px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.modal {
+  width: 105%;
+}
+.modal-content {
+  width: 80%;
+}
+.login-btn,
+.signup-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border: 0px;
+}
+.login-btn::after,
+.signup-btn::after {
+  border: none;
+}
+.login-submit {
+  width: 100%;
+  height: 40px;
+  padding: 0px;
+  margin-top: 15px;
+}
+.reset-pass-link {
+  text-decoration: none;
+}
+.icon-login-div {
+  margin-left: 45%;
+}
+.authIcon {
+  display: block;
+  width: 20%;
+}
+.close {
+  width: 20%;
+  border: none;
+  margin-left: 85%;
+  -webkit-appearance: button;
+}
+.starIcon {
+  width: 8%;
+}
+.locationIcon {
+  width: 10%;
+  height: 10%;
+  margin: 0px;
+  padding: 0px;
+}
+.cardBox {
+  width: 85%;
+  margin-right: 30%;
+}
+.cardContent {
+  padding: 7%;
+}
+.row.content {
+  height: 450px;
+}
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
 }
