@@ -17,20 +17,20 @@ class Footer extends Component {
             <main className="col-4">
               <h3>Barefoot Nomad</h3>
               <p style={{ color: "rgba(255,255,255,0.81)" }}>
-                Simplifiying travellers
+                Simplifying employee travels
               </p>
               <div>
-                <p style={{ color: "#5E6D77", paddingTop: "0px" }}>
+                <p style={{ color: "#5E6D77", marginBottom: "0px" }}>
                   KN 54 St,{" "}
                 </p>
                 <p style={{ color: "#5E6D77" }}>Kigali, Rwanda</p>
               </div>
             </main>
-            <main className="col-4 mt-4 text-center">
+            <main className="col-4 mt-4 text-center contactMain">
               <p>Accomodation</p>
               <p>Most Visited place</p>
             </main>
-            <main className="col-4 text-center">
+            <main className="col-4 text-center contactMain">
               <h4>Contact us</h4>
               <p className="text-center">Email: strikers668@gmail.com</p>
             </main>
