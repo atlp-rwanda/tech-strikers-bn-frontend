@@ -17,15 +17,12 @@ exports[`snapshot test 1`] = `
     </div>
     <button
       className="p-2 bd-highlight signup-btn"
-      onClick={[Function]}
-      type="button"
     >
       Signup
     </button>
     <button
       className="ml-auto p-2 bd-highlight login-btn"
       onClick={[Function]}
-      type="button"
     >
       Login
     </button>

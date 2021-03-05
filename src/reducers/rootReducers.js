@@ -1,9 +1,8 @@
 import { combineReducers } from "redux";
+import { resetPasswordReducer } from "./resetPasswordReducer";
 
 const rootReducer = combineReducers({
-  //posts: postsReducer,
-  //likes: likesReducer,
-  //profile:profileReducers
+  token: resetPasswordReducer,
 });
 
 export default rootReducer;
