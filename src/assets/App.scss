@@ -18,6 +18,16 @@
 .signup-btn::after {
   border: none;
 }
+.login-passreset {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  // height: 40px;
+}
+.login-submit-btn {
+  margin-top: 10px;
+}
 .login-submit {
   width: 100%;
   height: 40px;
@@ -72,7 +82,11 @@ footer {
   color: white;
   padding: 15px;
 }
-
+.contactMain {
+  position: absolute;
+  right: 60px;
+  color: rgba(255, 255, 255, 0.81);
+}
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
   .sidenav {
