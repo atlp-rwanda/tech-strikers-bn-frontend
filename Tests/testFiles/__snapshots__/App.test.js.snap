@@ -17,27 +17,23 @@ exports[`snapshot test 1`] = `
     </div>
     <button
       className="p-2 bd-highlight signup-btn"
-      onClick={[Function]}
-      type="button"
     >
       Signup
     </button>
     <button
       className="ml-auto p-2 bd-highlight login-btn"
       onClick={[Function]}
-      type="button"
     >
       Login
     </button>
   </div>
   <section>
     <img
-      alt=""
-      className="col-12"
+      className="topSection"
       src="test-file-stub"
       style={
         Object {
-          "maxHeight": "400px",
+          "maxHeight": "500px",
         }
       }
     />
@@ -307,14 +303,14 @@ exports[`snapshot test 1`] = `
               }
             }
           >
-            Simplifiying travellers
+            Simplifying employee travels
           </p>
           <div>
             <p
               style={
                 Object {
                   "color": "#5E6D77",
-                  "paddingTop": "0px",
+                  "marginBottom": "0px",
                 }
               }
             >
@@ -333,7 +329,7 @@ exports[`snapshot test 1`] = `
           </div>
         </main>
         <main
-          className="col-4 mt-4 text-center"
+          className="col-4 mt-4 text-center contactMain"
         >
           <p>
             Accomodation
@@ -343,7 +339,7 @@ exports[`snapshot test 1`] = `
           </p>
         </main>
         <main
-          className="col-4 text-center"
+          className="col-4 text-center contactMain"
         >
           <h4>
             Contact us

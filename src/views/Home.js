@@ -18,9 +18,8 @@ class Home extends Component {
         <section>
           <img
             src={frontImage}
-            className="col-12"
-            style={{ maxHeight: "400px" }}
-            alt=""
+            className="topSection"
+            style={{ maxHeight: "500px" }}
           />
         </section>
 
