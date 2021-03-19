@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import { Modal, Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
-import authIcon from "../assets/image/userAuthIcon.png";
+import Signup from "./Signup";
 
 class Navbar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       show: false,
     };
+
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
@@ -39,55 +38,14 @@ class Navbar extends Component {
           >
             Signup
           </button>
+          <Signup onShow={show} onClose={this.handleClose} />
 
-          <button
-            type="button"
-            className="ml-auto p-2 bd-highlight login-btn"
-            onClick={this.handleShow}
-          >
+          <button type="button" className="ml-auto p-2 bd-highlight login-btn">
             Login
           </button>
-          <Modal
-            show={show}
-            className="modal"
-            onHide={this.handleClose}
-            backdrop="static"
-            keyboard={false}
-          >
-            <Modal.Header closeButton />
-            <div className="icon-login-div">
-              <img src={authIcon} className="authIcon" />
-              Login
-            </div>
-            <Modal.Body>
-              <Form>
-                <Form.Group controlId="formGroupEmail">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-                <Form.Group controlId="formGroupPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
-                  <a href="#" className="reset-pass-link">
-                    Forgot Password?
-                  </a>
-                </Form.Group>
-
-                <Button
-                  className="login-submit"
-                  variant="primary"
-                  type="submit"
-                  size="lg"
-                >
-                  Login
-                </Button>
-              </Form>
-            </Modal.Body>
-          </Modal>
         </div>
       </>
     );
   }
 }
-
 export default Navbar;

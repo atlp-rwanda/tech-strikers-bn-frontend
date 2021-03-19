@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import AppShell from "./AppShell";
 import Dashboard from "./views/Dashboard";
 import "./assets/App.scss";
+import Verify from "./views/Verify";
 
 const App = () => (
   <Router>
@@ -12,9 +13,11 @@ const App = () => (
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/login">
-        <Login />
-      </Route>
+      <Route
+        exact
+        path="/confirmation/api/v1/user/confirmation/:token"
+        component={Verify}
+      />
       <Route path="/dashboard">
         <AppShell>
           <Dashboard />

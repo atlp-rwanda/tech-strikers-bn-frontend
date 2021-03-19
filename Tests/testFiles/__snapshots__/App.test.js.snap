@@ -24,7 +24,6 @@ exports[`snapshot test 1`] = `
     </button>
     <button
       className="ml-auto p-2 bd-highlight login-btn"
-      onClick={[Function]}
       type="button"
     >
       Login

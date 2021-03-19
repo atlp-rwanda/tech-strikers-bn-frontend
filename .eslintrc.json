@@ -23,6 +23,8 @@
     "react/no-unescaped-entities": 0,
     "jsx-a11y/alt-text": 0,
     "quotes": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/jsx-one-expression-per-line": 0,
+    "react/sort-comp": 0,
+    "no-alert": 0
   }
 }
