@@ -1,0 +1,9 @@
+URL_users="http://localhost:3000/api/V1/users"
+URL_roles="http://localhost:3000/api/v1/user/getRoles"
+URL_one_role="http://localhost:3000/api/v1/user/getRole/"
+URL_update="http://localhost:3000/api/v1/user/updateRole/"
+URL_delete_role="http://localhost:3000/api/v1/user/deleteRole/"
+URL_userbyinput='http://localhost:3000/api/V1/userbyinput/'
+URL_assigne="http://localhost:3000/api/V1/user/assignRole"
+URL_createRole="http://localhost:3000/api/v1/user/createRole"
+URL_getRoleByName="http://localhost:3000/api/V1/user/getRoleByName/"

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=15.8.0"
+  },
   "scripts": {
     "dev": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production",
@@ -48,6 +51,7 @@
     "react-bootstrap": "^1.4.3",
     "react-bootstrap-dropdown-menu": "^1.1.23",
     "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "redux": "^4.0.5",
@@ -55,6 +59,8 @@
     "serve": "^11.3.2",
     "style": "0.0.3",
     "url-loader": "^4.1.1",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.4",
     "yup": "^0.32.8"
   },
   "devDependencies": {
@@ -70,6 +76,7 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "bootstrap": "^4.6.0",
     "css-loader": "^5.0.1",
+    "dotenv-webpack": "^7.0.1",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
@@ -79,6 +86,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
+    "form-data": "^4.0.0",
     "html-webpack-plugin": "^5.0.0-alpha.9",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
